@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unlayer Editor</title>
-    <link rel="stylesheet" href="./custom.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unlayer Editor</title>
+  <link rel="stylesheet" href="/custom.css" />
 </head>
 
 <body>
-    <div id="editor" style="height: 100vh;" ></div>
+  <div id="editor" style="height: 100vh;"></div>
 
-    <!-- Unlayer Embed -->
-    <script src="https://editor.unlayer.com/embed.js"></script>
+  <!-- Unlayer Embed -->
+  <script src="https://editor.unlayer.com/embed.js"></script>
 
-    <script>
+  <script>
 
-  unlayer.init({
-    id: 'editor',
-    projectId: 1,
-    displayMode: 'email',
-    appearance: {
-      theme: 'modern_light'
-    },
-    customJS: [`${location.origin}/custom.js`]
-  });
-</script>
+    unlayer.init({
+      id: 'editor',
+      projectId: 1,
+      displayMode: 'email',
+      appearance: {
+        theme: 'modern_light'
+      },
+      customJS: [`${location.origin}/custom.js`]
+      // customJS: ['http://localhost:1234/custom.js']
+    });
+  </script>
 
 </body>
 
