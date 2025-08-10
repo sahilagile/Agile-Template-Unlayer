@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "parcel index.html --open",
+    "dev": "parcel index.html src/custom.js --port 1234 --open",
     "serve": "http-server . -p 8080",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html src/custom.js"
   },
   "devDependencies": {
     "parcel": "^2.15.4"
